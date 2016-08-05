@@ -24,6 +24,10 @@ def index():
 def time():
     return str(datetime.now())
 
+@app.route('/hi')
+def hi():
+    return "helloworld"
+
 
 @sockets.route('/echo')
 def echo_socket(ws):
